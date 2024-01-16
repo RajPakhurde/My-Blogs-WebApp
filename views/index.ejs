@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+<div id="form-blog">
+    <div id="new-blog">
+        <h1>Write new Blog 👇</h1>
+        
+        <form action="/submit" method="POST" id="write-blog">
+            <input type="text" id="title" name="title" placeholder="Title of the Blog!" required> <br>
+            <textarea name="blogDescription" id="blogDescription" cols="30" rows="10" placeholder="Write your Blog here...." required></textarea> <br>
+            <input type="submit" name="submit" value="submit" id="btn-submit">
+        </form>
+    </div>
+</div>
+
+<div class="created-blog">
+    <%  if(locals.content) { %>
+       <% content.forEach( function(item) { %>
+            <div class="blog">
+                <h1><%= item.title %></h1> <hr>
+                <h3><%= item.blogDescription %></h3>
+            </div>
+        <% }) %>
+    <% } %>
+</div>
+
+      
+
+<%- include("partials/footer.ejs") %>
+       
