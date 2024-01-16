@@ -17,7 +17,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 1g0px 50px;
     background-color: antiquewhite;
 }
 
@@ -42,81 +42,4 @@ html, body {
     position: relative;
 }
 
-#write-blog {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#title, #blogDescription {
-    width: 100%;
-    font-size: 2vw;
-    border-radius: 10px;
-    padding: 10px 20px;
-    border: 3px solid rgb(158, 158, 158);
-}
-
-#blogDescription {
-    font-size: 1.5vw;
-} 
-
-#new-blog h1 {
-    padding: 20px;
-    display: inline-block;
-}
-
-#form-blog {
-    display: flex;
-    justify-content: center;
-}
-
-#new-blog {
-    width: 50vw;
-}
-
-#title:focus, #blogDescription:focus {
-    border-color: #007bff; 
-} 
-
-#btn-submit {
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-weight: bold; 
-    background-color: #007bff;
-}
-
-.created-blog {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 30px;
-    justify-content: center;
-}
-
-.blog {
-    min-width: 300px;
-    width: calc(33.33% - 10px);  
-    height: 200px;
-    margin: 5px;  
-    font-size: 15px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    padding: 10px;
-    overflow: hidden;
-}
-
-.blog h1 {
-    padding: 10px 15px;
-} 
-
-.blog h3 {
-    padding: 10px 15px;
-}
+ 

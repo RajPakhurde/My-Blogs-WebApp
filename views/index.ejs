@@ -1,23 +1,20 @@
 <%- include("partials/header.ejs") %>
 
-<div id="form-blog">
-    <div id="new-blog">
-        <h1>Write new Blog 👇</h1>
-        
-        <form action="/submit" method="POST" id="write-blog">
-            <input type="text" id="title" name="title" placeholder="Title of the Blog!" required> <br>
-            <textarea name="blogDescription" id="blogDescription" cols="30" rows="10" placeholder="Write your Blog here...." required></textarea> <br>
-            <input type="submit" name="submit" value="submit" id="btn-submit">
-        </form>
-    </div>
-</div>
 
 <div class="created-blog">
-    <%  if(locals.content) { %>
-       <% content.forEach( function(item) { %>
+    <h1>My blog</h1>
+    <a id="newPostBtn" href="/new">New Post</a>
+    <%  if(locals.posts) { %>
+       <% posts.forEach( function(post) { %>
             <div class="blog">
-                <h1><%= item.title %></h1> <hr>
-                <h3><%= item.blogDescription %></h3>
+                <h2><%= post.title %></h2> <hr>
+                <small><%= post.date %></small>
+                <p><%= post.content %></p>
+                <small>
+                    By: <%= post.author %>
+                </small>
+                <a class="edit" href="/edit/<%= post.id %>">Edit</a>
+                <a class="delete" href="/api/posts/delete/<%= post.id %>">Delete</a>
             </div>
         <% }) %>
     <% } %>
