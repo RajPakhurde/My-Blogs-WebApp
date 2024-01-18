@@ -30,7 +30,9 @@ app.get("/new", (req, res) => {
 app.post("/api/posts", async (req, res) => {
     try {
         const response = await axios.post(API_URL+"/posts", req.body);
+        console.log(req.body.content);
         console.log(response.data);
+        console.log("world");
         res.redirect("/");
     } catch (error) {
         res.status(500).json({message: "Error creating post"});

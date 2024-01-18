@@ -63,6 +63,7 @@ app.post("/posts", (req, res) => {
         date: new Date(),
     }
     lastId = newId;
+    console.log(req.body);
     posts.push(post);
     res.status(201).json(post);
 })

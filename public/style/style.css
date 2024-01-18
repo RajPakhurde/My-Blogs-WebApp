@@ -221,3 +221,52 @@ a {
     color: #706f6f;
     
 }
+
+#modified-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 20px;
+}
+
+#modified-heading {
+    padding-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(132, 133, 132);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(132, 133, 132);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#btn-submit1, #btn-submit2{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #6b79f1;
+    color: #fff;
+    font-weight: bold;
+}
+
+#modified-heading {
+    color: #6b79f1
+}
+
+#nav-left {
+    color: #686868;
+}
